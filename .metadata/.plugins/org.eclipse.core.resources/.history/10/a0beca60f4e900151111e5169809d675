@@ -1,0 +1,14 @@
+package bean;
+
+import java.rmi.RemoteException;
+import java.util.Date;
+import java.rmi.server.UnicastRemoteObject;
+
+public class UsersImpl extends UnicastRemoteObject implements IUsersRemote{
+
+	protected UsersImpl() throws RemoteException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,20 @@
+package bean;
+//import annotation.NonVide;
+//import annotation.Table;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+//@Table(name="t_users")
+public class UsersImpl extends UnicastRemoteObject implements IUsersRemote{
+	Integer idUser;
+	//	@NonVide(mess="Veuille saisir le titre du livre")
+	String password;
+	//	@NonVide(mess="Veuille saisir l'auteur du livre")
+	String dateVisite;
+	Boolean isAdmin;
+	
+	protected UsersImpl() throws RemoteException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+}

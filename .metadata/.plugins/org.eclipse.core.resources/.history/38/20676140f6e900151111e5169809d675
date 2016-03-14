@@ -1,0 +1,21 @@
+package serveurRMI;
+
+import java.rmi.Naming;
+import java.rmi.registry.LocateRegistry;
+
+public class ServeurRMI {
+	public static void main(String[] args) {
+		try {
+	
+			LocateRegistry.createRegistry(1099);
+			//Instanciation des objets et enregistrement de ceux-ci dans le registre de nom
+			BanqueServiceImpl od = new BanqueServiceImpl();
+			Naming.rebind("rmi://localhost:1099/BK", od);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

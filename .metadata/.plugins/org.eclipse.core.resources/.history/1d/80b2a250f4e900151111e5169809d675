@@ -1,0 +1,26 @@
+package bean;
+
+import java.rmi.RemoteException;
+import java.util.Date;
+import java.rmi.server.UnicastRemoteObject;
+
+public class BanqueServiceImpl extends UnicastRemoteObject implements IBanqueRemote{
+
+	protected BanqueServiceImpl() throws RemoteException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double conversion(double mt) throws RemoteException {
+		// TODO Auto-generated method stub
+		return 11*mt;
+	}
+
+	@Override
+	public Date getServerDate() throws RemoteException {
+		// TODO Auto-generated method stub
+		return new Date();
+	}
+ 
+}
