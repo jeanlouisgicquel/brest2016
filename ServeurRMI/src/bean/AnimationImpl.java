@@ -1,0 +1,15 @@
+package bean;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+public class AnimationImpl extends UnicastRemoteObject implements IAnimationRemote{
+	private static final long serialVersionUID = 1L;
+	
+	
+	protected AnimationImpl() throws RemoteException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -9,23 +9,21 @@ public class ServeurRMI {
 	
 			LocateRegistry.createRegistry(1099);
 			//Instanciation des objets et enregistrement de ceux-ci dans le registre de nom
-			UsersImpl user = new UsersImpl();
+			UserImpl user = new UserImpl();
 			Naming.rebind("rmi://localhost:1099/user", user);
 			
-			GroupesImpl groupe = new GroupesImpl();
+			GroupeImpl groupe = new GroupeImpl();
 			Naming.rebind("rmi://localhost:1099/groupe", groupe);
 			
-			AnimationsImpl animation = new AnimationImpl();
+			AnimationImpl animation = new AnimationImpl();
 			Naming.rebind("rmi://localhost:1099/animation", animation);
 			
-			ReservationsImpl reservation = ReservationImpl();
+			ReservationImpl reservation = new ReservationImpl();
 			Naming.rebind("rmi://localhost:1099/reservation", reservation);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		
 	}
-
 }

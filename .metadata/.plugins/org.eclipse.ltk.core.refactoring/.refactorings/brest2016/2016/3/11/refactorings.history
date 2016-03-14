@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move &apos;RMI_CLIENT&apos; to &apos;brest2016&apos;" description="Move &apos;RMI_CLIENT&apos; to &apos;brest2016&apos;" destination="/brest2016" element1="/ServeurRMI/RMI_CLIENT" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1457968519539" updateReferences="true"/>
-</session>

@@ -1,0 +1,10 @@
+package bean;
+
+import java.rmi.server.UnicastRemoteObject;
+
+public class GroupeImpl extends UnicastRemoteObject implements IUserRemote{
+	private static final long serialVersionUID = 1L;
+	
+	
+
+}
